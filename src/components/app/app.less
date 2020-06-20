@@ -1,0 +1,43 @@
+@import "../../fonts/style.less";
+@import "../../components/variables-less/variables.less";
+
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: "Geometria", sans-serif;
+  font-size: 18px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: @black;
+}
+
+.main {
+  width: 100%;
+  font-size: 13px;
+  font-weight: 400;
+  color: @black;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+}
