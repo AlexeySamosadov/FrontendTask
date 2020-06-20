@@ -61,9 +61,9 @@ const Widget = (props) => {
 
       // if (currentResizer.classList.contains(`resizer--se`)) {
       width = e.pageX - rect.width;
-        height = e.pageY - rect.height;
-        widgetWrap.style.width = width + `px`;
-        widgetWrap.style.height = height + `px`;
+      height = e.pageY - rect.height;
+      widgetWrap.style.width = width + `px`;
+      widgetWrap.style.height = height + `px`;
       // }
 
       // else if (currentResizer.classList.contains(`resizer--nw`)) {
@@ -120,8 +120,6 @@ const Widget = (props) => {
     <div
       className={className}
       id={id}
-      // onDragStart={dragStart}
-      // onDragOver={dragOver}
     >
       <div onMouseDown={mouseDown}>
         {props.children}
